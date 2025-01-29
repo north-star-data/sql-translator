@@ -2,6 +2,7 @@ import sqlglot
 import streamlit as st
 from streamlit_ace import st_ace
 
+app_name = "SQL Translator"
 dialects = (
     "athena",
     "bigquery",
@@ -31,9 +32,9 @@ dialects = (
     "tsql",
 )
 
-st.set_page_config(page_title="SQL Translation", layout="wide")
+st.set_page_config(page_title=app_name, layout="wide")
 
-st.title("SQL Translator")
+st.title(app_name)
 st.write(f"Translate SQL queries between {len(dialects)} different dialects")
 st.markdown(
     "[![Built by North Star](https://img.shields.io/badge/built_by-North_Star_Data-4F46E5)](https://northstardata.co/)"
