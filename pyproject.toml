@@ -1,0 +1,11 @@
+[project]
+name = "sql-translator"
+version = "0.1.0"
+description = "Translate SQL queries between 26 different dialects"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "sqlglot[rs]>=26.3.9",
+    "streamlit>=1.41.1",
+    "streamlit-ace>=0.1.1",
+]
